@@ -1,0 +1,250 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&family=Poller+One&family=Roboto+Mono:wght@700&display=swap');
+
+body{
+    background-color: #232323;
+}
+
+.section_wrapper{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1440px ){
+    .section_wrapper{
+        width: 970px;
+    }
+}
+
+@media(max-width: 992px ){
+    .section_wrapper{
+        width: 750px;
+    }
+}
+
+@media(max-width: 776px ){
+    .section_wrapper{
+        max-width: none;
+    }
+}
+
+
+
+
+
+
+
+header{
+    height: 90px ;
+    //background-color: #000;
+}
+
+
+
+.btn_contact{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border: 4px solid #fff;
+    border-radius: 70px;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px ;
+}
+
+.intro{
+    background: url("img/Component 4.svg");
+    padding: 0px 0 115px 0;
+}
+
+.card1{
+    max-width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right top,  rgba(52, 52, 52, 0.2), rgba(152, 152, 152, 0.2) , rgba(254, 251, 251, 0.2));
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    border: 2px solid rgba(251, 251, 251, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.card1:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/Rectangle20.png), #000;
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.card_text{
+    font-size: 22px;
+    color: white;
+    margin: 10px 80px;
+}
+
+/****************** Section 2 *******************/
+.columns_wrapper{
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column1{
+    width: 640px;
+    margin: 40px;
+}
+
+.column2{
+    width: 640px;
+}
+
+.about_me_header{
+    font-family: Poller One;
+    font-size: 86px;
+    -webkit-text-stroke: 5px #35e60d;
+    color: transparent;
+    margin: 40px;
+}
+
+.about_me_text{
+    font-family: Roboto Mono ;
+    font-size: 22px;
+    color: #e2e2e2;
+    margin: 40px;
+}
+
+#myCanvas {
+    width: 600px;
+    height: 600px;
+}
+/****************** Section 3 *******************/
+
+section3{
+
+}
+
+.my_portfolio{
+    font-family: Poller One;
+    font-size: 86px;
+    font-weight: 400;
+    margin: 10px;
+    background-image: radial-gradient(34% 598% at 1.51% 100%, #A854FD 17%, #4C93FF 60%, #29FFCC 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.my_works{
+    display: flex;
+    flex-wrap: wrap;
+/*    align-items: center;*/
+}
+
+.cover{
+
+}
+
+.my_works img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    align-items: center;
+}
+
+/****************** Section 4 *******************/
+
+form{
+    width: 640px;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_me_header{
+    font-family: Poller One;
+    font-size: 64px;
+    width: 445px;
+    color: #272727;
+    background-color: #42d00f;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+input::placeholder{
+    font-size: 25px;
+    font-family: Podkova;
+
+}
+
+.input{
+    margin: 10px 5px;
+    height: 70px;
+    width: 55% ;
+    background-color: #272727;
+    border:  2px solid #504E4E;
+}
+
+.textarea_subject{
+    margin: 10px 5px;
+    width: 100%;
+    height: 80px;
+    background-color: #272727;
+    border:  2px solid #504E4E;
+}
+
+.textarea_message{
+    margin: 10px 5px 20px 5px;
+    width: 640px;
+    height: 280px;
+    background-color: #272727;
+    border:  2px solid #504E4E;
+}
+
+.send_message_btn{
+    margin: 0 auto;
+    padding: 15px 100px;
+    background-color: #272727;
+    border: 1px solid #1FFF01;
+    font-size: 24px;
+    color: #1FFF01;
+    font-family: Podkova;
+}
+
+/****************** Footer *******************/
+
+footer{
+    padding: 10px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+}
+
+.icons_container{
+    margin: 0 auto;
+}
+
+.social_media_icons{
+    margin: 0 2px 0 2px;
+}
+
+
+canvas {
+    height: 500px;
+    width: 500px;
+}
