@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
+<section>
+    <div class="section_wrapper">
+        <div class="contact_section_wrapper">
+            <form>
+                <div class="contact_me_header">Contact me</div>
+                <div class="short_input">
+                    <input class="input_name" name="name" type="text" placeholder="name" required>
+                    <input class="input_email" name="email" type="email" placeholder="email" required>
+                </div>
+                <input class="input_subject" name="subject" type="text" placeholder="subject" required>
+                <input class="input_message" name="message" rows="5" placeholder="message" required>
+                <button class="send_message_btn" type = "submit">Send message</button>
+            </form>
+            <div>
+                <img src="img/bulb.gif">
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>

@@ -9,8 +9,8 @@ let animation = lottie.loadAnimation({
 
 //Button animation
 function colorChange1(selector, colors, ms){
-    var el=document.querySelector(selector);
-    var anime=[];
+    let el=document.querySelector(selector);
+    let anime=[];
     for(i=0;i<colors.length;i++)
         anime[i]={borderColor:colors[i]};
     el.animate(anime,{duration:ms, iterations:Infinity});
@@ -18,8 +18,8 @@ function colorChange1(selector, colors, ms){
 colorChange1('.btn_contact',['#FFF500','#05f501','#00F0FF','#1400FF', '#FFF500'],10000);
 
 function colorChange2(selector, colors, ms){
-    var el=document.querySelector(selector);
-    var anime=[];
+    let el=document.querySelector(selector);
+    let anime=[];
     for(i=0;i<colors.length;i++)
         anime[i]={color:colors[i]};
     el.animate(anime,{duration:ms, iterations:Infinity});

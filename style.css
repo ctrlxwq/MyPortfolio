@@ -1,66 +1,455 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Podkova&family=Poller+One&family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&family=Poller+One&family=Roboto+Mono:wght@400&display=swap');
 
 body{
     background-color: #232323;
 }
 
-.section_wrapper{
-    width: 1440px;
-    margin: 0 auto;
+@media(min-width: 1200px){
+    .section_wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .card1{
+        max-width: 1300px;
+        height: 700px;
+        margin: 60px 0 40px 0;
+    }
+    .about_me_header{
+        font-size: 64px;
+        margin-bottom: 80px;
+    }
+    .about_me_text{
+        font-size: 24px;
+        color: white;
+        margin: 10px 80px;
+        line-height: 30px;
+    }
+    .btn_contact{
+        margin: 20px;
+        border: 4px solid #fff;
+        border-radius: 70px;
+        text-align: center;
+        font-size: 24px;
+        padding: 15px 25px;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+
+    .my_skills_header{
+        font-size: 80px;
+        -webkit-text-stroke: 5px #35e60d;
+        margin: 40px;
+    }
+    .my_skills_text{
+        font-family: Roboto Mono ;
+        font-size: 20px;
+        color: #e2e2e2;
+        margin: 40px;
+        line-height: 30px;
+    }
+    .column1{
+        width: 600px;
+    }
+    .column2{
+        width: 600px;
+    }
+    .columns_wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    /*Section3*/
+    .my_portfolio_header{
+        font-size: 86px;
+        margin: 10px;
+    }
+    .my_works img{
+        width: 230px;
+        height: 230px;
+    }
+    /*Section4*/
+    form{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        margin: 40px 0;
+    }
+    .contact_me_header{
+        font-family: Poller One;
+        font-size: 64px;
+        width: 445px;
+        height:  66px;
+        color: #272727;
+        background-color: #42d00f;
+    }
+    .short_input{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .input_name, .input_email{
+        height: 45px;
+        margin: 5px;
+    }
+    .input_subject {
+        height: 60px;
+        margin: 5px;
+    }
+    .input_message {
+        height: 120px;
+        margin: 5px;
+    }
+    .send_message_btn{
+        padding: 10px 45px;
+        font-size: 25px;
+    }
 }
 
-@media(max-width: 1440px ){
+@media(max-width: 1200px ){
     .section_wrapper{
-        width: 970px;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    /*Section1*/
+    .card1{
+        height: 500px;
+        margin: 30px;
+    }
+    .about_me_header{
+        font-size: 55px;
+        margin: 30px;
+        font-family: Poller One;
+        color: #15d700;
+    }
+    .about_me_text{
+        font-size: 22px;
+        color: white;
+        margin: 10px 80px;
+    }
+    .btn_contact{
+        margin: 20px;
+        border: 4px solid #fff;
+        border-radius: 70px;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+    /*Section2*/
+    .my_skills_header{
+        font-size: 60px;
+        -webkit-text-stroke: 3px #35e60d;
+        margin: 40px;
+    }
+    .my_skills_text{
+        font-family: Roboto Mono ;
+        font-size: 20px;
+        color: #e2e2e2;
+        margin: 40px;
+    }
+    .column1{
+       width: 450px;
+    }
+    .column2{
+        width: 450px;
+
+    }
+    .columns_wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    /*Section3*/
+    .my_portfolio_header{
+        font-size: 86px;
+        margin: 10px;
+    }
+    .my_works img{
+        width: 180px;
+        height: 180px;
+    }
+    /*Section4*/
+    form{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    .contact_me_header{
+        font-family: Poller One;
+        font-size: 40px;
+        width: 280px;
+        color: #272727;
+        background-color: #42d00f;
+    }
+    .input_name, .input_email{
+        height: 40px;
+    }
+    .input_subject, .input_message{
+        height: 60px;
+    }
+    .send_message_btn{
+        padding: 10px 45px;
+        font-size: 25px;
+    }
+    .short_input{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .input_name, .input_email{
+        height: 45px;
+
+    }
+    .input_subject {
+        height: 60px;
+        margin: 5px;
+    }
+    .input_message{
+        height: 120px;
+        margin: 5px 5px 10px 5px;
     }
 }
 
 @media(max-width: 992px ){
     .section_wrapper{
-        width: 750px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /*Section1*/
+
+    .card1{
+        height: 400px;
+        margin: 30px;
+    }
+    .about_me_header{
+      font-size: 40px;
+    }
+    .about_me_text{
+        font-size: 20px;
+        color: white;
+        margin: 10px 80px;
+    }
+    .btn_contact{
+        margin: 20px;
+        border: 3px solid #fff;
+        border-radius: 70px;
+        text-align: center;
+        font-size: 20px;
+        padding: 7px 15px;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    /*Section2*/
+
+    .my_skills_header{
+        font-size: 50px;
+        -webkit-text-stroke: 2px #35e60d;
+        margin: 20px;
+    }
+    .my_skills_text{
+        font-family: Roboto Mono ;
+        font-size: 18px;
+        color: #e2e2e2;
+        margin: 10px 10px 10px 20px;
+    }
+    .column1{
+        width: 360px;
+    }
+    .column2{
+        width: 360px;
+    }
+    .columns_wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    /*Section3*/
+    .my_skills_header{
+        font-size: 60px;
+        margin: 20px;
+    }
+    .my_works img{
+        max-width: 150px;
+        height: 150px;
+    }
+    /*Section4*/
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    .contact_me_header{
+        font-family: Poller One;
+        font-size: 40px;
+        width: 280px;
+        color: #272727;
+        background-color: #42d00f;
+    }
+    .short_input{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .input_name, .input_email{
+        height: 40px;
+    }
+    .input_subject, .input_message{
+        height: 60px;
+    }
+    .send_message_btn{
+        padding: 13px 45px;
+        font-size: 25px;
+    }
+    .input_name, .input_email{
+        width: 50%;
+        height: 45px;
+        margin: 5px;
+    }
+    .input_subject {
+        height: 60px;
+        margin: 5px;
+    }
+    .input_message{
+        height: 90px;
+        margin: 5px 5px 10px 5px;
     }
 }
-
-@media(max-width: 776px ){
+@media(max-width: 767px ){
     .section_wrapper{
-        max-width: none;
+        width: auto;
+        margin: 0 auto;
     }
+    /*Section1*/
+
+    .card1{
+        height: 400px;
+        margin: 30px;
+    }
+    .about_me_header{
+        font-size: 35px;
+    }
+    .about_me_text{
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white;
+        margin: 10px 80px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .btn_contact{
+
+        margin: 20px;
+        border: 4px solid #fff;
+        border-radius: 70px;
+        text-align: center;
+        font-size: 17px;
+        padding: 7px 10px;
+    }
+
+
+
+    .column1{
+        margin: 0 auto;
+
+        width: 100%;
+        padding: 5px 20px;
+    }
+    .my_skills_text{
+        font-size: 16px;
+        line-height: 20px;
+        color: white;
+        margin: 10px 80px;
+    }
+    .my_skills_header{
+        font-size: 50px;
+        margin: 10px 80px;
+    }
+    .column2{
+        width: auto;
+        margin: 0 auto;
+    }
+    .columns_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my_portfolio_header{
+        font-size: 50px;
+        margin: 0 auto;
+    }
+    /*Section4*/
+    form{
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_me_header{
+        font-family: Poller One;
+        font-size: 35px;
+        width: 240px;
+        color: #272727;
+        background-color: #42d00f;
+        margin: 0 auto;
+    }
+    .short_input{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px ;
+    }
+    .input_name, .input_email{
+        height: 40px;
+        margin: 5px;
+    }
+    .input_subject {
+        height: 60px;
+        margin: 5px;
+    }
+    .input_message{
+        height: 90px;
+        margin: 5px;
+    }
+    .send_message_btn{
+        padding: 10px 40px;
+        font-size: 22px;
+    }
+
 }
 
-
-
-
-
-
-
-header{
-    height: 90px ;
-    //background-color: #000;
+.section1_wrapper{
+    background-image: url("img/Component 4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
-
-.btn_contact{
-    width: 150px;
-    height: 50px;
-    margin: 20px;
-    border: 4px solid #fff;
-    border-radius: 70px;
-    text-align: center;
-    font-size: 24px;
-    padding: 10px ;
+.about_me_bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
-.intro{
-    background: url("img/Component 4.svg");
-    padding: 0px 0 115px 0;
+.links{
+    color: #1cc2e3;
 }
 
 .card1{
     max-width: 1300px;
-    height: 700px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,66 +467,55 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(img/Rectangle20.png), #000;
+    background-image: url(img/Rectangle20.png);
     mix-blend-mode: soft-light;
     opacity: 0.3;
     border-radius: 40px;
     z-index: 2;
 }
-
-.card_text{
-    font-size: 22px;
-    color: white;
-    margin: 10px 80px;
-}
-
-/****************** Section 2 *******************/
-.columns_wrapper{
-display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.column1{
-    width: 640px;
-    margin: 40px;
-}
-
-.column2{
-    width: 640px;
-}
-
 .about_me_header{
     font-family: Poller One;
-    font-size: 86px;
-    -webkit-text-stroke: 5px #35e60d;
-    color: transparent;
-    margin: 40px;
+    color: #15d700;
 }
 
-.about_me_text{
+
+.card_text{
+    color: white;
+}
+
+.btn_contact{
+    border: solid #fff;
+    text-align: center;
+}
+
+
+/****************** Section 2 *******************/
+
+.my_skills_header{
+    font-family: Poller One;
+    color: transparent;
+}
+
+.my_skills_text{
     font-family: Roboto Mono ;
-    font-size: 22px;
     color: #e2e2e2;
-    margin: 40px;
 }
 
 #myCanvas {
-    width: 600px;
-    height: 600px;
+    /*min-width: 600px;
+    min-height: 600px;*/
+    height: 100%;
+    width: 100%;
 }
 /****************** Section 3 *******************/
-
-section3{
-
+.my_portfolio{
+    display: flex;
+    flex-direction: column;
 }
 
-.my_portfolio{
+.my_portfolio_header{
     font-family: Poller One;
-    font-size: 86px;
     font-weight: 400;
-    margin: 10px;
     background-image: radial-gradient(34% 598% at 1.51% 100%, #A854FD 17%, #4C93FF 60%, #29FFCC 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,37 +523,35 @@ section3{
     text-fill-color: transparent;
 }
 
-.my_works{
+.my_works {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-/*    align-items: center;*/
-}
-
-.cover{
 
 }
 
 .my_works img{
-    width: 250px;
-    height: 250px;
     object-fit: cover;
-    margin: 10px;
-    align-items: center;
+    align-self: center;
 }
 
 /****************** Section 4 *******************/
 
-form{
-    width: 640px;
-    margin: 30px 20px 20px 20px;
+.contact_section_wrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contact_me_header{
     font-family: Poller One;
-    font-size: 64px;
-    width: 445px;
     color: #272727;
     background-color: #42d00f;
     margin: 0 auto;
@@ -192,7 +568,7 @@ input::placeholder{
 
 }
 
-.input{
+/*.input{
     margin: 10px 5px;
     height: 70px;
     width: 55% ;
@@ -214,18 +590,50 @@ input::placeholder{
     height: 280px;
     background-color: #272727;
     border:  2px solid #504E4E;
+}*/
+
+.input_name, .input_email, .input_subject, .input_message{
+    width: 100%;
+    background-color: #272727;
+    border:  2px solid #504E4E;
 }
 
 .send_message_btn{
     margin: 0 auto;
-    padding: 15px 100px;
     background-color: #272727;
     border: 1px solid #1FFF01;
-    font-size: 24px;
     color: #1FFF01;
     font-family: Podkova;
 }
 
+.send_message_btn:hover{
+    background-color: #15d700;
+    border: none;
+    color: #272727;
+    border-radius: 5px;
+}
+
+/*
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}*/
 /****************** Footer *******************/
 
 footer{

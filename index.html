@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1440">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="node_modules/lottie-web/build/player/lottie.min.js" defer></script>
     <script src="animation.js" defer></script>
@@ -18,34 +18,40 @@
 
 <conteiner>
     <section1>
-        <header>
-            <div class="btn_contact">contact me</div>
-
-        </header>
-
-
-        <div class="intro">
-            <div class="card1">
-                <p class="card_text">I have more than 5 years of practical experience in designing and developing websites
-                    and web applications. My skills include an excellent command of a large number
-                    of technologies that ensure the creation of good and high-quality website
-                    creating. I am open to new ideas and projects, so I will
-                    be happy to help you realize your goals</p>
+            <div class="section1_wrapper">
+                <div class="section_wrapper">
+                    <div class="intro">
+                        <div class="card1">
+                            <div class="about_me_header"> Hi, I'm Veronika Dicel </div>
+                            <div class="about_me_text">
+                                I have more than 5 years of practical experience in designing and developing websites
+                                and web applications. My skills include an excellent command of a large number
+                                of technologies that ensure the creation of good and high-quality website
+                                creating. I am open to new ideas and projects, so I will
+                                be happy to help you realize your goals</div>
+                            <div class="about_me_bottom">
+                                <div class="btn_contact">contact me</div>
+                                <img class="logo"  src="img/logo1.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section1>
     <section2>
         <div class="section_wrapper">
             <div class="coloumns">
                 <div class="columns_wrapper">
                     <div class="column1">
-                        <div class="about_me_header">
-                            About me
+                        <div class="my_skills_header">
+                            My skills
                         </div>
-                        <div class="about_me_text">
-                            I have more than 5 years of practical experience in designing and developing websites and web applications.
-                            My skills include an excellent command of a large number  of technologies that ensure the creation of good
-                            and high-quality website creating. I am open to new ideas and projects, so I will be happy to help you realize your goals
+                        <div class="my_skills_text">
+                            I create successful responsive websites that are fast, easy to use, and built with best practices.
+                            The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web
+                            apps, custom plugins, features, animations, and coding interactive layouts.</br></br>
+
+                            Visit my <a class="links">Instagram</a> profile for more details or just <a class="links" href="contact_page.html">contact</a> me.
                         </div>
                     </div>
                     <div class="column2">
@@ -128,46 +134,45 @@
     </section2>
     <section3>
         <div class="section_wrapper">
-            <header>
-                <p class="my_portfolio">My portfolio</p>
-            </header>
-            <div class="my_works">
-                <!--<div class="cover">  </div>
-                <div class="cover"> </div>-->
-                <img src="img/portfolio1.jpeg" alt="">
-                <img src="img/portfolio2.jpeg" alt="">
-                <img src="img/portfolio3.jpeg" alt="">
-                <img src="img/portfolio4.jpeg" alt="">
-                <img src="img/portfolio5.jpeg" alt="">
-                <img src="img/portfolio6.jpeg" alt="">
-                <img src="img/portfolio7.jpeg" alt="">
-                <img src="img/portfolio8.png" alt="">
-                <img src="img/portfolio9.jpeg" alt="">
-                <img src="img/portfolio10.jpeg" alt="">
+            <div class="my_portfolio">
+                <div class="my_portfolio_header">My portfolio</div>
+                <div class="my_works">
+                    <a href=""><img src="img/portfolio1.jpeg" alt=""></a>
+                    <a href=""><img src="img/portfolio2.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio3.jpeg" alt=""></a>
+                    <a href=""><img src="img/portfolio4.jpeg" alt=""></a>
+                    <a href=""><img src="img/portfolio5.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio6.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio7.jpeg" alt=""></a>
+                    <a href=""><img src="img/portfolio8.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio9.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio10.jpeg" alt=""></a>
+                    <a href=""><img src="img/portfolio11.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio12.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio13.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio14.jpg" alt=""></a>
+                    <a href=""><img src="img/portfolio15.jpg" alt=""></a>
+                </div>
             </div>
         </div>
     </section3>
     <section4>
         <div class="section_wrapper">
-            <form>
-                <div class="contact_me_header">Contact me</div>
-            <!--    <div class="field">
-                    <input class="input is-large" name="name" type="text" required>
+            <div class="contact_section_wrapper">
+                <form>
+                    <div class="contact_me_header">Contact me</div>
+                    <div class="short_input">
+                        <input class="input_name" name="name" type="text" placeholder="name" required>
+                        <input class="input_email" name="email" type="email" placeholder="email" required>
+                    </div>
+                    <input class="input_subject" name="subject" type="text" placeholder="subject" required>
+                    <input class="input_message" name="message" rows="5" placeholder="message" required>
+                    <button class="send_message_btn" type = "submit">Send message</button>
+                </form>
+                <div>
+                    <img src="img/bulb.gif">
                 </div>
-                <div class="field">
-                    <input class="input is-large" name="email" type="email" required>
-                </div>
-                <div class="field">
-                    <input class="input is-large" name="message" rows="5" required>
-                </div>-->
-                <div class="input-wrapper">
-                    <input class="input" name="name" type="text" placeholder="name" required>
-                    <input class="input" name="email" type="email" placeholder="email" required>
-                </div>
-                <input class="textarea_subject" name="subject" type="text" placeholder="subject" required>
-                <input class="textarea_message" name="message" rows="5" placeholder="message" required>
-                <button class="send_message_btn" type = "submit">Send message</button>
-            </form>
+            </div>
         </div>
     </section4>
 
