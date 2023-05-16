@@ -10,10 +10,12 @@ body{
         max-width: 1200px;
         margin: 0 auto;
     }
+    /*Section1*/
     .card1{
         max-width: 1300px;
         height: 700px;
         margin: 60px 0 40px 0;
+        padding: 40px 90px;
     }
     .about_me_header{
         font-size: 64px;
@@ -22,11 +24,14 @@ body{
     .about_me_text{
         font-size: 24px;
         color: white;
-        margin: 10px 80px;
+        margin: 10px 60px;
         line-height: 30px;
     }
+    .about_me_bottom{
+        margin: 130px 80px 0 80px;
+    }
     .btn_contact{
-        margin: 20px;
+        margin: 60px;
         border: 4px solid #fff;
         border-radius: 70px;
         text-align: center;
@@ -34,13 +39,11 @@ body{
         padding: 15px 25px;
     }
     .logo{
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
+        margin: 30px 80px;
     }
-
-
-
-
+    /*Section2*/
     .my_skills_header{
         font-size: 80px;
         -webkit-text-stroke: 5px #35e60d;
@@ -118,7 +121,6 @@ body{
         max-width: 970px;
         margin: 0 auto;
     }
-
     /*Section1*/
     .card1{
         height: 500px;
@@ -127,21 +129,28 @@ body{
     .about_me_header{
         font-size: 55px;
         margin: 30px;
-        font-family: Poller One;
-        color: #15d700;
     }
     .about_me_text{
         font-size: 22px;
         color: white;
         margin: 10px 80px;
     }
+    .about_me_bottom{
+        margin: 70px 80px 0 80px;
+    }
     .btn_contact{
-        margin: 20px;
+        margin: 40px 0 0 80px;
         border: 4px solid #fff;
         border-radius: 70px;
-        text-align: center;
         font-size: 22px;
-        padding: 10px 20px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+        margin: 0 80px;
     }
     /*Section2*/
     .my_skills_header{
@@ -241,17 +250,21 @@ body{
         color: white;
         margin: 10px 80px;
     }
+    .about_me_bottom{
+        margin: 70px 80px 0 80px;
+    }
     .btn_contact{
-        margin: 20px;
-        border: 3px solid #fff;
+        margin: 20px 0 0 80px;
+        border: 4px ;
         border-radius: 70px;
         text-align: center;
-        font-size: 20px;
-        padding: 7px 15px;
+        font-size: 22px;
+        padding: 5px;
     }
     .logo{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+        margin: 0 80px;
     }
     /*Section2*/
 
@@ -331,45 +344,45 @@ body{
 }
 @media(max-width: 767px ){
     .section_wrapper{
-        width: auto;
+        width: 500px;
         margin: 0 auto;
     }
     /*Section1*/
 
     .card1{
-        height: 400px;
+        height: 250px;
         margin: 30px;
+
     }
     .about_me_header{
-        font-size: 35px;
+        font-size: 25px;
     }
     .about_me_text{
-        font-size: 18px;
-        letter-spacing: 1.5px;
-        color: white;
-        margin: 10px 80px;
+        font-size: 15px;
+        margin: 10px 10px;
     }
-    .logo{
-        width: 50px;
-        height: 50px;
+    .about_me_bottom{
+        margin: 10px;
     }
     .btn_contact{
-
-        margin: 20px;
-        border: 4px solid #fff;
+        margin: 10px 0 50px 10px;
+        border: 2px;
         border-radius: 70px;
         text-align: center;
-        font-size: 17px;
-        padding: 7px 10px;
+        font-size: 16px;
+        padding: 5px;
     }
-
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin: 0 30px 10px 0;
+    }
 
 
     .column1{
         margin: 0 auto;
-
         width: 100%;
-        padding: 5px 20px;
+
     }
     .my_skills_text{
         font-size: 16px;
@@ -431,7 +444,154 @@ body{
         font-size: 22px;
     }
 
+
+    .footer{
+        padding: 4px;
+    }
+    .social_media_icons{
+        margin: 2px;
+        width: 30px;
+        height: 30px;
+    }
+    .footer_text{
+        font-size: 18px;
+    }
+
 }
+
+@media(max-width: 500px ){
+    .section_wrapper{
+        width: auto;
+        margin: 0 auto;
+    }
+    /*Section1*/
+
+    .card1{
+        display: flex;
+        height: 200px;
+        margin: 30px;
+
+    }
+    .about_me_header{
+        font-size: 15px;
+    }
+    .about_me_text{
+        width: 90%;
+        font-size: 10px;
+        color: white;
+        margin: 0;
+    }
+    .about_me_bottom{
+        padding: 10px;
+    }
+    .btn_contact{
+        margin: 10px 0 15px 10px;
+        border: 1px solid;
+        border-radius: 70px;
+        text-align: center;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        margin: 0 30px 0 0;
+    }
+
+
+    .coloumns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column1{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .my_skills_text{
+
+        width: 90%;
+        font-size: 15px;
+        line-height: 18px;
+        color: white;
+    }
+    .my_skills_header{
+        font-size: 30px;
+
+    }
+    .column2{
+        width: auto;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .columns_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*Section3*/
+    .my_portfolio_header{
+        font-size: 30px;
+        margin: 0 0 10px 50px ;
+    }
+    .my_works img{
+        max-width: 100px;
+        height: 100px;
+    }
+    /*Section4*/
+    form{
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_me_header{
+        font-family: Poller One;
+        font-size: 35px;
+        width: 240px;
+        color: #272727;
+        background-color: #42d00f;
+        margin: 0 auto;
+    }
+    .short_input{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px ;
+    }
+    .input_name, .input_email{
+        height: 40px;
+        margin: 5px;
+    }
+    .input_subject {
+        height: 60px;
+        margin: 5px;
+    }
+    .input_message{
+        height: 90px;
+        margin: 5px;
+    }
+    .send_message_btn{
+        padding: 10px 40px;
+        font-size: 22px;
+    }
+
+
+    .footer{
+        padding: 4px;
+    }
+    .social_media_icons{
+        margin: 2px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer_text{
+        font-size: 18px;
+    }
+}
+
 
 .section1_wrapper{
     background-image: url("img/Component 4.svg");
@@ -440,7 +600,9 @@ body{
 }
 
 .about_me_bottom{
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -484,7 +646,8 @@ body{
 }
 
 .btn_contact{
-    border: solid #fff;
+    border: solid;
+    border-radius: 60px;
     text-align: center;
 }
 
@@ -637,22 +800,21 @@ input::placeholder{
 /****************** Footer *******************/
 
 footer{
-    padding: 10px;
     background-color: #191919;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .icons_container{
-    margin: 0 auto;
+    margin: 30px 0 0 0 ;
 }
 
-.social_media_icons{
-    margin: 0 2px 0 2px;
+.footer_text{
+    color: #763bd4;
+    margin: 20px 0 30px 0;
 }
 
 
-canvas {
-    height: 500px;
-    width: 500px;
-}
+
+
