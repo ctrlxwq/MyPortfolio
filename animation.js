@@ -7,7 +7,7 @@ function colorChangeBorder(selector, colors, ms){
         anime[i]={borderColor:colors[i]};
     el.animate(anime,{duration:ms, iterations:Infinity});
 }
-colorChangeBorder('.btn_contact',['#05f501','#00F0FF','#1400FF'],10000);
+colorChangeBorder('.btn_contact',['#05f501','#00F0FF','#1400FF', '#05f501'],10000);
 
 function colorChangeText(selector, colors, ms){
     let el=document.querySelector(selector);
@@ -16,4 +16,4 @@ function colorChangeText(selector, colors, ms){
         anime[i]={color:colors[i]};
     el.animate(anime,{duration:ms, iterations:Infinity});
 }
-colorChangeText('.btn_contact',['#05f501','#00F0FF','#1400FF'],10000);
+colorChangeText('.btn_contact',['#05f501','#00F0FF','#1400FF', '#05f501'],10000);
